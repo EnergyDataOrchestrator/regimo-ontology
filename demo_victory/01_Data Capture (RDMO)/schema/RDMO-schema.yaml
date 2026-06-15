@@ -1,0 +1,49 @@
+id: https://example.org/edo-dmp-mapping
+name: edo_dmp_mapping
+prefixes:
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  maDMP: https://example.org/RDA-DMP-Common-Standard/
+default_prefix: edo_dmp_mapping
+
+classes:
+  ProjectDataset:
+    description: A mapping class for your RDMO project data to maDMP standards.
+    slots:
+      - research_question
+      - project_start
+      - project_end
+      - contact_person
+      - dataset_description
+      - storage_location
+      - preservation_duration
+
+slots:
+  research_question:
+    domain: ProjectDataset
+    range: string
+    description: "Mapped from: What is the main research question of the project?"
+  project_start:
+    domain: ProjectDataset
+    range: date
+    description: "Mapped from: When does the project start?"
+  project_end:
+    domain: ProjectDataset
+    range: date
+    description: "Mapped from: When does the project end?"
+  contact_person:
+    domain: ProjectDataset
+    range: string
+    description: "Mapped from: Who is the long-term contact person..."
+  dataset_description:
+    domain: ProjectDataset
+    range: string
+    description: "Mapped from: What kind of data set is it?"
+  storage_location:
+    domain: ProjectDataset
+    range: string
+    description: "Mapped from: Where is the data set stored during the project?"
+  preservation_duration:
+    domain: ProjectDataset
+    range: string
+    description: "Mapped from: How long must the data be stored?"

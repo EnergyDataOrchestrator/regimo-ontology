@@ -1,0 +1,38 @@
+id: https://example.org/rdmo-to-madmp-map
+name: rdmo_to_madmp_map
+
+# This mapping identifies the source RDMO questions and assigns them
+# to the corresponding slots in the target RDA maDMP LinkML schema.
+
+mappings:
+  - source_field: "What is the main research question of the project?"
+    target_slot: dmp.project.description
+    transformation: None
+
+  - source_field: "When does the project start?"
+    target_slot: dmp.project.start
+    transformation: iso_date
+
+  - source_field: "When does the project end?"
+    target_slot: dmp.project.end
+    transformation: iso_date
+
+  - source_field: "Who is the long-term contact person who can make decisions about the data?"
+    target_slot: dmp.contact.name
+    transformation: None
+
+  - source_field: "Please enter the email address of the permanent contact named above."
+    target_slot: dmp.contact.mbox
+    transformation: None
+
+  - source_field: "What kind of data set is it?"
+    target_slot: dmp.dataset.description
+    transformation: None
+
+  - source_field: "Where will the data be stored or archived after the project is completed?"
+    target_slot: dmp.dataset.distribution.host.title
+    transformation: string_split # Extracting Zenodo as host title
+
+  - source_field: "Does this data set contain personal data?"
+    target_slot: dmp.dataset.personal_data
+    transformation: boolean_to_enum # Map "No" to 'no'
