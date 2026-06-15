@@ -1,0 +1,24 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.2/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "Dataset.description": "This dataset represents a heterogeneous aggregation of metadata records, harvested via the OAI-PMH protocol and constrained to the OAI-DC schema. By implementing a simple random sampling strategy across a diverse array of source repositories, the collection serves as a statistically representative proxy for the broader metadata landscape. This approach mitigates institutional bias and ensures that subsequent statistical operations—such as quantifying element completion rates or analyzing term frequencies—reflect the actual distribution of metadata quality and practices within the ecosystem. Consequently, the dataset provides a robust empirical foundation for assessing interoperability and \"FAIRness\" at scale, particularly for discovery-level metadata.",
+            "datePublished": "2026-06-15T10:47:21+00:00",
+            "description": "To which extent are metadata records compatible with the Dublin Core.",
+            "endDate": "2026-06-22",
+            "startDate": "2026-06-15"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.2"
+            }
+        }
+    ]
+}

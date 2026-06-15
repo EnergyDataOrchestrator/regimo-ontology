@@ -1,0 +1,16 @@
+# Mapping: RDMO to RO-Crate (schema.org)
+mappings:
+  - source_field: "What is the main research question of the project?"
+    target_slot: schema:description
+  - source_field: "When does the project start?"
+    target_slot: schema:startDate
+  - source_field: "When does the project end?"
+    target_slot: schema:endDate
+  - source_field: "Who is the long-term contact person..."
+    target_slot: schema:contactPoint.name
+  - source_field: "Please enter the email address of the permanent contact..."
+    target_slot: schema:contactPoint.email
+  - source_field: "What kind of data set is it?"
+    target_slot: schema:Dataset.description
+  - source_field: "Where will the data... be stored..."
+    target_slot: schema:Dataset.distribution.contentUrl
