@@ -1,0 +1,31 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "my_dataset",
+      "description": "This dataset represents a heterogeneous aggregation of metadata records, harvested via the OAI-PMH protocol and constrained to the OAI-DC schema.",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "identifier": "Handle/DOI",
+      "isBasedOn": "https://data.qa.unhide.helmholtz-metadaten.de/docs",
+      "duration": "P8Y",
+      "sdPublisher": "Zenodo",
+      "creator": {
+        "@type": "Person",
+        "name": "Mohamed-Anis Koubaa",
+        "email": "mohamed.koubaa@kit.ed"
+      }
+    },
+    {
+      "@id": "#project",
+      "@type": "ResearchProject",
+      "name": "Metadata Interoperability Analysis",
+      "description": "To which extent are metadata records compatible with the Dublin Core.",
+      "keywords": ["Dublin Core", "Interoperability"],
+      "startDate": "2026-06-15",
+      "endDate": "2026-06-22",
+      "contributor": "https://codebase.helmholtz.cloud/oonagh.mannix"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Metadata Interoperability Analysis",
+      "description": "This dataset represents a heterogeneous aggregation of metadata records.",
+      "creator": { "@id": "#anis_koubaa" },
+      "maintainer": { "@id": "#hmc" },
+      "hasPart": [
+        { "@id": "metadata_analysis_01.json" }
+      ]
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": { "@id": "./" },
+      "conformsTo": { "@id": "https://w3id.org/ro/crate/1.1" }
+    },
+    {
+      "@id": "metadata_analysis_01.json",
+      "@type": "File",
+      "name": "Curated collection of heterogeneous research metadata records",
+      "description": "A curated collection of heterogeneous research metadata records, harvested via OAI-PMH and normalised to support FAIR-compliant analysis within the EDO toolchain, focusing on metadata orchestration, publication integrity, and the epistemological implications of semantic interoperability.",
+      "encodingFormat": "application/json",
+      "creator": { "@id": "#anis_koubaa" }
+    },
+    {
+      "@id": "#anis_koubaa",
+      "@type": "Person",
+      "name": "Anis Koubaa",
+      "identifier": "https://orcid.org/0000-0001-8552-2008",
+      "email": "mohamed.koubaa@kit.ed"
+    },
+    {
+      "@id": "#hmc",
+      "@type": "Organization",
+      "name": "Helmholtz Metadata Collaboration",
+      "url": "https://helmholtz-metadaten.de/",
+      "identifier": "https://ror.org/04s3j1c37"
+    },
+    {
+      "@id": "#project",
+      "@type": "ResearchProject",
+      "name": "Metadata Interoperability Analysis",
+      "description": "To which extent are metadata records compatible with the Dublin Core.",
+      "startDate": "2026-06-15",
+      "funder": { "@id": "#hmc" }
+    }
+  ]
+}

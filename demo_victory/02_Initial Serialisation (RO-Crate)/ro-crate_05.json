@@ -1,0 +1,41 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Metadata Interoperability Analysis",
+      "description": "This dataset represents a heterogeneous aggregation of metadata records.",
+      "creator": { "@id": "#anis_koubaa" },
+      "maintainer": { "@id": "#hmc" }
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": { "@id": "./" },
+      "conformsTo": { "@id": "https://w3id.org/ro/crate/1.1" }
+    },
+    {
+      "@id": "#anis_koubaa",
+      "@type": "Person",
+      "name": "Anis Koubaa",
+      "identifier": "https://orcid.org/0000-0001-8552-2008",
+      "email": "mohamed.koubaa@kit.ed"
+    },
+    {
+      "@id": "#hmc",
+      "@type": "Organization",
+      "name": "Helmholtz Metadata Collaboration",
+      "url": "https://helmholtz-metadaten.de/",
+      "identifier": "https://ror.org/04s3j1c37"
+    },
+    {
+      "@id": "#project",
+      "@type": "ResearchProject",
+      "name": "Metadata Interoperability Analysis",
+      "description": "To which extent are metadata records compatible with the Dublin Core.",
+      "startDate": "2026-06-15",
+      "funder": { "@id": "#hmc" }
+    }
+  ]
+}

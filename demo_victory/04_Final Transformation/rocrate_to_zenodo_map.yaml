@@ -1,0 +1,44 @@
+id: https://w3id.org/edo/rocrate-zenodo-map
+name: rocrate_to_zenodo_mapping
+description: Mapping RO-Crate JSON-LD entities to Zenodo deposition metadata.
+
+prefixes:
+  zenodo: https://zenodo.org/schema/
+  schema: http://schema.org/
+
+classes:
+  ZenodoDeposit:
+    slots:
+      - title
+      - description
+      - upload_type
+      - publication_type
+      - creators
+
+  Creator:
+    slots:
+      - name
+      - orcid
+
+slots:
+  title:
+    range: string
+    mappings: [schema:name] # Maps from Dataset.name
+  description:
+    range: string
+    mappings: [schema:description] # Maps from Dataset.description
+  upload_type:
+    range: string
+    equals_expression: "dataset"
+  publication_type:
+    range: string
+    equals_expression: "dataset"
+  creators:
+    range: Creator
+    multivalued: true
+  name:
+    range: string
+    mappings: [schema:name] # Maps from Person.name
+  orcid:
+    range: string
+    mappings: [schema:identifier] # Maps from Person.identifier

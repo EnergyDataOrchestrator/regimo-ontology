@@ -1,0 +1,272 @@
+[
+  {
+    "question": "What is the main research question of the project?",
+    "set": "",
+    "values": "To which extent are metadata records compatible with the Dublin Core."
+  },
+  {
+    "question": "Please give some keywords describing the research question.",
+    "set": "",
+    "values": "Dublin Core; Interoperability"
+  },
+  {
+    "question": "To which discipline / disciplines is the project assigned?",
+    "set": "",
+    "values": "Engineering Sciences / Computer Science"
+  },
+  {
+    "question": "When does the project start?",
+    "set": "",
+    "values": "2026-06-15"
+  },
+  {
+    "question": "When does the project end?",
+    "set": "",
+    "values": "2026-06-22"
+  },
+  {
+    "question": "Which persons or institutions are responsible for the project coordination?",
+    "set": "",
+    "values": "https://codebase.helmholtz.cloud/oonagh.mannix"
+  },
+  {
+    "question": "Are there other data management requirements (e.g. from the scientific community) that need to be considered?",
+    "set": "",
+    "values": "No"
+  },
+  {
+    "question": "What kind of data set is it?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "This dataset represents a heterogeneous aggregation of metadata records, harvested via the OAI-PMH protocol and constrained to the OAI-DC schema. By implementing a simple random sampling strategy across a diverse array of source repositories, the collection serves as a statistically representative proxy for the broader metadata landscape. This approach mitigates institutional bias and ensures that subsequent statistical operations\u2014such as quantifying element completion rates or analyzing term frequencies\u2014reflect the actual distribution of metadata quality and practices within the ecosystem. Consequently, the dataset provides a robust empirical foundation for assessing interoperability and \"FAIRness\" at scale, particularly for discovery-level metadata."
+  },
+  {
+    "question": "Is the data set generated or reused?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Reused; Reused"
+  },
+  {
+    "question": "If reused, who created the data set?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "The data set is provided by the Helmholtz Knowledge Graph Team.; The data set is provided by the Helmholtz Knowledge Graph Team."
+  },
+  {
+    "question": "If reused, at what address, PID or URL is the data set available?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "https://data.qa.unhide.helmholtz-metadaten.de/docs; https://data.qa.unhide.helmholtz-metadaten.de/docs"
+  },
+  {
+    "question": "Is the data set reproducible, i.e. could it be re-created or recovered if it were lost?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Yes, with little effort; Yes, with little effort"
+  },
+  {
+    "question": "What is the size of the data set?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Less than 1 GB; Less than 1 GB"
+  },
+  {
+    "question": "What file formats are used?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "json is the file format. Nevertheless the actual record is in form of an xml-string within the json-file.; json is the file format. Nevertheless the actual record is in form of an xml-string within the json-file."
+  },
+  {
+    "question": "Are different versions of the data set created?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Yes; Yes"
+  },
+  {
+    "question": "What technology or tool is used for versioning?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Version control system (e.g., Git, SVN); Version control system (e.g., Git, SVN)"
+  },
+  {
+    "question": "What will this data set be used for/how will it be used during the project?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Several statistical analyses will take place during the project.; Several statistical analyses will take place during the project."
+  },
+  {
+    "question": "How often will this data set be used?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Very often, like 20 times per month.; Very often, like 20 times per month."
+  },
+  {
+    "question": "To what extent will infrastructure resources be required (e.g. CPU hours, bandwidth, storage space... etc.).",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Infrastructure resources of the usual workplace equipment are sufficient; Infrastructure resources of the usual workplace equipment are sufficient"
+  },
+  {
+    "question": "Are there actual or potential usage scenarios that could benefit from support by a data management or IT expert, or that even require such support?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "No; No"
+  },
+  {
+    "question": "Where is the data set stored during the project?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "codebase will be the container of data, during and after the end of the project.; codebase will be the container of data, during and after the end of the project."
+  },
+  {
+    "question": "Are there internal project guidelines for consistent data organisation? If so, which and where are they documented?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "No; No"
+  },
+  {
+    "question": "Is there an internal project guideline for naming the data? If so, please briefly outline the naming conventions and, if necessary, link to the documentation.",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Not yet; Not yet"
+  },
+  {
+    "question": "Is this data set interoperable, i.e. can it be shared and reused between researchers, institutions, organisations, countries, etc.?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "The data set adheres to standardised formats: OAI-DC; The data set adheres to standardised formats: OAI-DC"
+  },
+  {
+    "question": "Will this data set be published or shared?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Yes, externally for everyone; Yes, externally for everyone"
+  },
+  {
+    "question": "If so, where are the data published?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "The Information Portal of HMC will host those data.; The Information Portal of HMC will host those data."
+  },
+  {
+    "question": "If so, under which terms of use or license is the data set published or shared?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Public domain (CC0); Public domain (CC0)"
+  },
+  {
+    "question": "Will the data be collaboratively used?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Yes, by several persons at various institutions; Yes, by several persons at various institutions"
+  },
+  {
+    "question": "Which platform / tools is / are used for collaboratively working on data and publications?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Codebase is intensively used in this context.; Codebase is intensively used in this context."
+  },
+  {
+    "question": "How is the collaborative work on the same files organised?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Codebase is intensively used in this context.; Codebase is intensively used in this context."
+  },
+  {
+    "question": "What quality assurance measures are in place for this data set?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "The sampling procedures are important for the acquisition of this data, the procedure guarantee that the data is representative.; The sampling procedures are important for the acquisition of this data, the procedure guarantee that the data is representative."
+  },
+  {
+    "question": "What metadata is collected automatically?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "All metadata is collected automatically.; All metadata is collected automatically."
+  },
+  {
+    "question": "Are metadata and contextual information checked for correctness and completeness?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Automatic check for completeness; Automatic check for completeness"
+  },
+  {
+    "question": "Who is responsible for documenting and checking the metadata and contextual information for accuracy and completeness?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Mohamed-Anis Koubaa; Mohamed-Anis Koubaa"
+  },
+  {
+    "question": "Please briefly explain the structure and the relationship between your data:",
+    "set": "Data Set \"my_dataset\"",
+    "values": "To be refined in nova-crate."
+  },
+  {
+    "question": "Are persistent identifiers (PIDs) used for this data set?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Yes; Yes"
+  },
+  {
+    "question": "What system of persistent identifiers is used?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Handle / DOI; Handle / DOI"
+  },
+  {
+    "question": "Does the legal situation of different countries have to be considered?",
+    "set": "",
+    "values": "No"
+  },
+  {
+    "question": "Does this data set contain personal data?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "No; No"
+  },
+  {
+    "question": "Does this data set contain non-personal sensitive data?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "No"
+  },
+  {
+    "question": "Has the research project been reviewed by an ethics committee?",
+    "set": "",
+    "values": "No, a review is not necessary, because: No personal data."
+  },
+  {
+    "question": "Is a legal approval / permit needed for the research?",
+    "set": "",
+    "values": "No"
+  },
+  {
+    "question": "Is a data access committee required to decide whether or not to grant access to data published by the project in response to access requests?",
+    "set": "",
+    "values": "No"
+  },
+  {
+    "question": "Is data used and/or created that is protected by copyright or related rights?",
+    "set": "",
+    "values": "No"
+  },
+  {
+    "question": "Does this data set have to be preserved for the long-term?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Yes"
+  },
+  {
+    "question": "What are the reasons for this data set to be preserved for the long-term?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Basis of a publication / proof of good scientific practice; Basis of a publication / proof of good scientific practice; Re-use in subsequent projects or by others; Re-use in subsequent projects or by others; Documentation, because of their societal relevance; Documentation, because of their societal relevance"
+  },
+  {
+    "question": "How long must the data be stored?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "8 years"
+  },
+  {
+    "question": "How long should the data be (re)usable after the end of the project?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "8 years"
+  },
+  {
+    "question": "Where will the data (including metadata, documentation and any relevant code or software) be stored or archived after the project is completed?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Generic data centre: Zenodo; Generic data centre: Zenodo"
+  },
+  {
+    "question": "Is the repository or data centre chosen certified (e.g. Data Seal of Approval, nestor Seal or ISO 16363)?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "No"
+  },
+  {
+    "question": "Have appropriate archiving solutions already been discussed with the repository or data centre?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Yes"
+  },
+  {
+    "question": "How is the identity of persons accessing the data verified?",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Helmholtz login."
+  },
+  {
+    "question": "Who is the long-term contact person who can make decisions about the data? Please enter their name.",
+    "set": "Data Set \"my_dataset\"",
+    "values": "Mohamed-Anis Koubaa"
+  },
+  {
+    "question": "Please enter the email address of the permanent contact named above.",
+    "set": "Data Set \"my_dataset\"",
+    "values": "mohamed.koubaa@kit.ed"
+  }
+]
