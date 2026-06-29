@@ -1,0 +1,13 @@
+id: https://w3id.org/linkml/examples/rdmoinfo
+name: rdmoinfo
+prefixes:
+  linkml: https://w3id.org/linkml/
+  rdmoinfo: https://w3id.org/linkml/examples/rdmoinfo
+imports:
+  - linkml:types
+default_range: string
+default_prefix: rdmoinfo
+
+classes:
+  RDMO:
+    attributes:
