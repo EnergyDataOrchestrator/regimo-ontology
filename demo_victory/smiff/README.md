@@ -1,4 +1,4 @@
-# Integration of Linkml to EDO
+# Integration of linkml to EDO
 
 These scripts demonstrate, how the output of RDMO (json list) can be used to generate a Linkml class definition and transform the 
 RDMO json output to a yaml file, conform to the generated linkML class definition.
@@ -10,8 +10,8 @@ php interpreter (no special modules needed)
 
 ## Generation of a linkML definition file 
 
-The script takes all ``question`` properties from the [../01_Data Capture (RDMO)/metadata_analysis_01.json](../01_Data\ Capture\ \(RDMO\)/metadata_analysis_01.json) 
-file and makes linkml attributes out of them. Additionally it adds the header information from [rdmo_header.linkML](rdmo_header.linkML) to the output (at the beginning).
+The script takes all ``question`` properties from the [../01_Data\ Capture \(RDMO\)/metadata_analysis_01.json](../01_Data\ Capture\ \(RDMO\)/metadata_analysis_01.json) 
+file and makes linkml attributes out of them. Additionally it adds the header information from [rdmo_header.linkML](templates/rdmo_header.linkML) to the output (at the beginning).
 
 To build linkml properties out of the questions, we do a number of transformtions:
 - replace one or more consequtive spaces with a single underline character  (_).
