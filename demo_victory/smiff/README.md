@@ -10,7 +10,7 @@ php interpreter (no special modules needed)
 
 ## Generation of a linkML definition file 
 
-The script takes all ``question`` properties from the [../01_Data\ Capture \(RDMO\)/metadata_analysis_01.json](../01_Data\ Capture\ \(RDMO\)/metadata_analysis_01.json) 
+The script takes all ``question`` properties from the [../01_Data\ Capture \(RDMO\)/metadata_analysis_01.json](https://github.com/EnergyDataOrchestrator/regimo-ontology/blob/demo-victory/demo_victory/01_Data%20Capture%20(RDMO)/metadata_analysis_01.json) 
 file and makes linkml attributes out of them. Additionally it adds the header information from [rdmo_header.linkML](templates/rdmo_header.linkML) to the output (at the beginning).
 
 To build linkml properties out of the questions, we do a number of transformtions:
@@ -25,7 +25,7 @@ php rdmo2linkML-definition.php "../01_Data Capture (RDMO)/metadata_analysis_01.j
 
 ## Generation of a yaml file, containing the same information as ``../01_Data Capture (RDMO)/metadata_analysis_01.json``. 
 
-The script catches all ``question`` and ``values`` properties from the [../01_Data Capture (RDMO)/metadata_analysis_01.json](../01_Data\ Capture\ \(RDMO\)/metadata_analysis_01.json) file, 
+The script catches all ``question`` and ``values`` properties from the [metadata_analysis_01.json](https://github.com/EnergyDataOrchestrator/regimo-ontology/blob/demo-victory/demo_victory/01_Data%20Capture%20(RDMO)/metadata_analysis_01.json) file, 
 and builds a yaml file from this information (properties are handled as described above).
 
 ````
