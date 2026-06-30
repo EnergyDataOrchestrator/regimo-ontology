@@ -1,0 +1,54 @@
+class_derivations:
+  DMPData:
+    populated_from: ProjectContainer
+    slot_derivations:
+      title:
+        populated_from: project.research_question.title
+      created:
+        populated_from: project.schedule.project_start
+      modified:
+        populated_from: project.schedule.project_end
+      dataset:
+        populated_from: project.dataset
+        cast_collection_as: MultiValuedList
+
+  Dataset:
+    populated_from: Dataset
+    slot_derivations:
+      title:
+        populated_from: id
+      description:
+        populated_from: description
+      personal_data:
+        populated_from: sensitive_data.personal_data_yesno.yesno
+        # Logic: Map 0/1 to 'no'/'yes'
+      sensitive_data:
+        populated_from: sensitive_data.other.yesno
+
+  Project:
+    populated_from: Project
+    slot_derivations:
+      title:
+        populated_from: research_question.title
+      start:
+        populated_from: schedule.project_start
+      end:
+        populated_from: schedule.project_end
+      funding:
+        populated_from: partner.rdm_policy
+      partner:
+        populated_from: partner
+
+  Contact:
+    populated_from: Partner
+    slot_derivations:
+      name:
+        populated_from: contact_person.name
+      mbox:
+        populated_from: contact_person.email
+
+  Partner:
+    populated_from: Partner
+    slot_derivations:
+      contact_person:
+        populated_from: contact_person
