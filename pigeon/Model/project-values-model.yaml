@@ -1,0 +1,56 @@
+id: https://w3id.org/edo/pigeon-schema
+name: pigeon-schema
+prefixes:
+  linkml: https://w3id.org/linkml/
+  pigeon: https://w3id.org/edo/pigeon/
+default_range: string
+
+classes:
+  Project:
+    description: Top-level container for all project-related metadata.
+    slots:
+      - additional_rdm_policy
+      - dataset
+      - legal_aspects
+      - partner
+      - schedule
+    slot_usage:
+      additional_rdm_policy: {range: RDMPolicy}
+      dataset: {range: Dataset}
+      legal_aspects: {range: LegalAspects}
+      partner: {range: Partner}
+      schedule: {range: Schedule}
+
+  Dataset:
+    slots:
+      - id
+      - description
+      - metadata
+      - preservation
+      - sensitive_data
+    slot_usage:
+      metadata: {range: DatasetMetadata}
+      preservation: {range: Preservation}
+      sensitive_data: {range: SensitiveData}
+
+  Preservation:
+    slots:
+      - repository
+      - duration
+      - responsible_person
+    slot_usage:
+      responsible_person: {range: Person}
+
+  Person:
+    slots:
+      - name
+      - email
+
+# Global Slot Definitions
+slots:
+  id: {identifier: true, range: string}
+  name: {range: string}
+  email: {range: string}
+  description: {range: string}
+  duration: {range: string}
+  repository: {range: string}
