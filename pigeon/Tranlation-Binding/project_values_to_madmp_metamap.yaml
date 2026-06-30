@@ -50,5 +50,7 @@ class_derivations:
   Partner:
     populated_from: Partner
     slot_derivations:
+      name:
+        populated_from: name
       contact_person:
         populated_from: contact_person
