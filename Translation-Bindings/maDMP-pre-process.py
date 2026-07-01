@@ -1,9 +1,12 @@
 import json
-import os
+from pathlib import Path
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-input_path = os.path.join(script_dir, '..', 'Structures', 'maDMP-schema-1.2.json')
-output_path = os.path.join(script_dir, '..', 'Structures', 'maDMP-schema-normalised-lifted.json')
+# Get the directory of the current script
+script_dir = Path(__file__).resolve().parent
+
+# Define the paths
+input_path = script_dir.parent / 'Structures' / 'maDMP-schema-1.2.json'
+output_path = script_dir.parent / 'Structures' / 'maDMP-schema-normalised-lifted.json'
 
 
 def normalize_oneof(data):
