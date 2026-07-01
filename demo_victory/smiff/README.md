@@ -20,7 +20,7 @@ To build linkml properties out of the questions, we do a number of transformtion
 - transform to lowercase characters
 
 ```` 
-php rdmo2linkML-definition.php "../01_Data Capture (RDMO)/metadata_analysis_01.json" > RDMO-definition.linkML
+php rdmo2linkML-definition.php "../01_Data Capture (RDMO)/metadata_analysis_01.json" > generated/RDMO-definition.linkML
 ````
 
 ## Generation of a yaml file, containing the same information as ``../01_Data Capture (RDMO)/metadata_analysis_01.json``. 
@@ -29,24 +29,34 @@ The script catches all ``question`` and ``values`` properties from the [metadata
 and builds a yaml file from this information (properties are handled as described above).
 
 ````
-php rdmo2yaml.php "../01_Data Capture (RDMO)/metadata_analysis_01.json" > metadata_analysis_01.yaml
+php rdmo2yaml.php "../01_Data Capture (RDMO)/metadata_analysis_01.json" > generated/metadata_analysis_01.yaml
 ````
 
 ## Check that ``metadata_analysis_01.yaml`` conforms to ``RDMO-definition.linkML``.
 
 ````
-linkml-validate  -s RDMO-definition.linkML metadata_analysis_01.yaml
+linkml-validate  -s generated/RDMO-definition.linkML generated/metadata_analysis_01.yaml
 ````
+
 
 At this point we have a yaml version of the json regimo output, as well as a linkml class definition file, describing the yaml  version of the regimo output.
 
+Now we can transform the newly created yaml dataset, containing the output of RDMO 
+into other formats using linkml, i.e. to json:
+````
+linkml-convert -s generated/RDMO-definition.linkML generated/metadata_analysis_01.yaml -t json > generated/metadata_analysis_01.json
+````
+
+nice, or ?
+
 ## Next steps:
 
-Develop a linkml description of the target format (internal EDO format). After that, linkml-map transformation can be applied to transform the generated yaml file to EDO's 
-internal representation.
+Develop a linkml description of the target format (internal EDO format). After that, linkml-map transformation 
+can be applied to transform the generated yaml file to EDO's internal representation.
 
 Additionally a linkml class defintion must be created for SMS  as well as for the knowledge graph, which both act as an input to EDO and must also be 
 transformed to the internal EDO format (see above) using linkml.
+
 
 
 
