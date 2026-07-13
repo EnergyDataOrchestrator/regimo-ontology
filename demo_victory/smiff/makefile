@@ -1,5 +1,12 @@
 default: generated/metadata_analysis_01.json
 
+LINKML := $(shell linkml-validate -V 2> /dev/null)
+ifndef LINKML
+    $(error "activate linkML with the following command: source venv/Scripts/activate")
+endif
+
+
+
 generated/RDMO-definition.linkML: 
 	@echo "create linkml class definition"
 	php rdmo2linkML-definition.php "../01_Data Capture (RDMO)/metadata_analysis_01.json" > generated/RDMO-definition.linkML
@@ -17,3 +24,8 @@ generated/metadata_analysis_01.json: generated/RDMO-definition.linkML generated/
 
 clean:
 	rm -f generated/*
+	
+open-world-example:
+	linkml-validate  -s test-definition.linkML test.json --config validation.config.yaml
+
+

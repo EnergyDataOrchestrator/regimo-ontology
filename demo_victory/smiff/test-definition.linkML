@@ -1,0 +1,20 @@
+id: https://w3id.org/linkml/examples/open-world-demo
+name: rdmoinfo
+prefixes:
+  linkml: https://w3id.org/linkml/
+  open-world-demo: https://w3id.org/linkml/examples/open-world-demo
+imports:
+  - linkml:types
+default_range: string
+default_prefix: open-world-demo
+
+classes:
+  Demo:
+    slots:
+      - a1
+      - a2
+
+slots:
+    a1:
+        required: true
+    a2:

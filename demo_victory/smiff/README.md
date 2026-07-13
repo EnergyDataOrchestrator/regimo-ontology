@@ -49,6 +49,21 @@ linkml-convert -s generated/RDMO-definition.linkML generated/metadata_analysis_0
 
 nice, or ?
 
+## Validate json-files with additional attributes (not specified in the schema)
+
+Use an additional config file for the validator and specify the following:
+````
+plugins:
+  JsonschemaValidationPlugin:
+    closed: false
+````
+
+Then reference the configuration file as an additional parameter to ``linkml-validate``
+
+````
+linkml-validate  -s test-definition.linkML test.json --config validation.config.yaml
+````
+
 ## Next steps:
 
 Develop a linkml description of the target format (internal EDO format). After that, linkml-map transformation 
