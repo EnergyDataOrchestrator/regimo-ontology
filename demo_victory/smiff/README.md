@@ -51,6 +51,8 @@ nice, or ?
 
 ## Validate json-files with additional attributes (not specified in the schema)
 
+### Command line
+
 Use an additional config file for the validator and specify the following:
 ````
 plugins:
@@ -63,6 +65,15 @@ Then reference the configuration file as an additional parameter to ``linkml-val
 ````
 linkml-validate  -s test-definition.linkML test.json --config validation.config.yaml
 ````
+
+### Python
+
+See example file ``test-open-world-linkML.py``. Change ``JsonschemaValidationPlugin(closed=False)`` to `` JsonschemaValidationPlugin(closed=True)`` to see an error about an unspecified attribute.
+
+````
+python test-open-world-linkML.py
+````
+
 
 ## Next steps:
 
